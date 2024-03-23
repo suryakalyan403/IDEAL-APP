@@ -37,5 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         pip3 install pytest
+        pip install --force-reinstall Flask Werkzeug
         export PYTHONPATH=src
         pytest tests/test-app.py
